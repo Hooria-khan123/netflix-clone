@@ -6,6 +6,8 @@ body {
   width: 100%;
   height: 100%;
   background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
 }
 body::before {
   content: ""; 
@@ -106,9 +108,9 @@ footer {
   color: white;
   margin: 500px 2px 2px 2px;
 }
-.footer h3 {
+/* .footer h3 {
   margin: -23px 0 0 -60px;
-}
+} */
 .footer h3:hover {
   color: black;
   text-decoration: underline;
@@ -151,8 +153,39 @@ main h1:hover{
   text-decoration: underline;
   color: black;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
-    background-color: lightyellow;
+
+
+@media screen and (max-width: 768px) {
+  .wraper {
+    width: 90%;
+    top: 15%;
+    left: 5%;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  .sign-in-btn, .sign-in-code-btn {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  main h1 {
+    font-size: 30px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footer ul {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .para, .para-1, .para-2, .para-3 {
+    font-size: 12px;
+    margin: 6px 0;
   }
 }
